@@ -1,27 +1,30 @@
 // open document function to start it all off
 $(function()  {
-
 // function to run every time a click happens - redirect to the appropriate DemDigits function referenced in line 7
 
+var buttonCheck = false;
 
 	$("#submit").click(function(){
 	
 				var firstInteger = $('#firstInteger').val();			
 				var secondInteger = $('#secondInteger').val();
-				
-				if('#additionButton'.checked=true)
+				// var buttonCheck = $('#additionButton').val();
+
+				// console.log(buttonCheck);
+
+				if($("additionButton").prop("checked", true))
 					{
 					var totalAdd = (eval(firstInteger) + eval(secondInteger));
 					console.log(totalAdd);
-					$('#historyOutput').append(firstInteger + '+' + secondInteger + '=' + totalAdd +"\n");
+					$('#historyOutput').prepend('<div>' + firstInteger + '+' + secondInteger + '=' + totalAdd + '</div>');
 					}
 				else{
-					null;
+					alert("null!");
 				};
 });
 
 });
-	  		// 		var addDemDigits = $('#additionButton');
+	  				
 					// var subDemDigits = $('#subtractionButton');
 					// var mulDemDigits = $('#multiplyButton');
 					// var divDemDigits = $('#divideButton');
