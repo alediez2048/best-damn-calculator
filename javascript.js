@@ -1,27 +1,68 @@
+
 function calculator (argument) {
 
-	if (addition) {
-
-		add = function addition();
-
-	}else if (subtraction) {
-
-		subtract  = function subtraction();
-
-	}else if (multiplication) {
-
-		times = function multiplication();
-
-	}else if (division) {
-
-		divide = function division();
-
-	}else {
-
-		function null();
-	}
 
 
 
-		var 
+		$(function()  {
+	  		
+
+	  		var submit = $('#submit');
+	  		
+	  		$submit.on('Click'), function (addDemDigits, subDemDigits, mulDemDigits, divDemDigits) {
+	  				
+	  				var addDemDigits = $('#additionButton');
+					var subDemDigits = $('#subtractionButton');
+					var mulDemDigits = $('#multiplyButton');
+					var divDemDigits = $('#divideButton');
+
+
+				if (addDemDigits) {
+					
+					function {
+
+						return ('Adding these nubers gives you ' (parseInt('#firstInteger') + parseInt('#secondInteger')); 
+					}
+
+				}else if subDemDigits {
+
+					 function()
+
+				}else if mulDemDigits {
+
+					function()
+
+				}else if divDemDigits {
+
+					function()
+
+				}else {
+
+					function null()
+				}
+
+
+			
+	  		});
+
+		
+		}
 }
+
+
+
+
+
+
+
+
+
+
+// var addDemDigits = $('#additionButton');
+
+// 			$addDemDigits.on('Click'), function() {
+
+// 				return a + b 
+
+
+
