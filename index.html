@@ -2,10 +2,40 @@
 <html>
 <head>
 	<title>Best Damn Calculator Around</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	<h1>Here's a calculator</h1>
 
-	
+    <script src="javascript.js"></script>
 
+	<!-- collecting the two integers -->
+	<div>
+		<form action="">
+			First integer (A):<br>
+			<input id ="firstInteger" type="number" name="firstNumber" value="23">
+			<br>
+			Second integer (B):<br>
+			<input id ="secondInteger" type="number" name="secondNumber">
+		</form>
+	</div>
+
+	<div>
+		<form>
+			<input id="additionButton" type="radio" name="operator"> A + B (add)
+			<br>
+			<input id="subtractionButton" type="radio" name="operator"> A - B (subtract)
+			<br>
+			<input id="multiplyButton" type="radio" name="operator"> A * B (multiply)
+			<br>
+			<input id ="divideButton" type="radio" name="operator"> A / B (divide)
+		</form>
+	</div>
+
+	<button id="submit">Click here to calculate</button>
+
+	<div>
+		<p id="historyOutput">placeholder for output from Javascript</p>
+	</div>
 </body>
 </html>

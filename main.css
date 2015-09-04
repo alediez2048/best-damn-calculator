@@ -1,0 +1,11 @@
+div{
+	border-style: solid;
+	border-color: black;
+	margin:20px;
+	padding: 20px;
+}
+
+button{
+	display: table;
+	margin: 0 auto;
+}
