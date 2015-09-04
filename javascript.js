@@ -12,40 +12,36 @@ var buttonCheck = false;
 
 				// console.log(buttonCheck);
 
-				if($("additionButton").prop("checked", true))
+				if($("#additionButton").prop("checked"))
 					{
 					var totalAdd = (eval(firstInteger) + eval(secondInteger));
-					console.log(totalAdd);
+					var totalSubtract = (eval(firstInteger) - eval(secondInteger));
+					var totalMultiply = (eval(firstInteger) * eval(secondInteger));
+					var totalDivide = (eval(firstInteger) / eval(secondInteger));
+
 					$('#historyOutput').prepend('<div>' + firstInteger + '+' + secondInteger + '=' + totalAdd + '</div>');
 					}
-				else{
+				if($("#subtractionButton").prop("checked"))
+					{
+					var totalSubtract = (eval(firstInteger) - eval(secondInteger));
+					$('#historyOutput').prepend('<div>' + firstInteger + '-' + secondInteger + '=' + totalSubtract + '</div>');
+					}
+				if($("#multiplyButton").prop("checked"))
+					{
+					var totalMultiply = (eval(firstInteger) * eval(secondInteger));
+					$('#historyOutput').prepend('<div>' + firstInteger + '*' + secondInteger + '=' + totalMultiply + '</div>');
+					}
+				if($("#divideButton").prop("checked"))
+					{
+					var totalDivide = (eval(firstInteger) / eval(secondInteger));
+					$('#historyOutput').prepend('<div>' + firstInteger + '/' + secondInteger + '=' + totalDivide + '</div>');
+					}
+				
+
+				if($("#divideButton" || "#multiplyButton" || "#additionBdutton" || "subtractionButton").prop("unchecked")){
 					alert("null!");
 				};
 });
 
 });
 	  				
-					// var subDemDigits = $('#subtractionButton');
-					// var mulDemDigits = $('#multiplyButton');
-					// var divDemDigits = $('#divideButton');
-
-					
-
-// // Addition only here!
-					
-
-// 						(function(){
-// 							var addResult = ('Adding these nubers gives you ' (parseInt(firstInteger).val()) + (parseInt(secondInteger).val()));
-// 						})
-// // // variables to set the ID of each radio button to an object we can mess with
-
-					
-
-// // // function to trigger when the addition radio button is selected
-// // 				function addition (addResult) {
-// // 						
-						
-// // // Attempt to push the 
-// 						
-					
-// // 	  		});
