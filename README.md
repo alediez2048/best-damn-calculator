@@ -1,2 +1,2 @@
 # best-damn-calculator
-Caluculator Friday Lab
+Calculator Friday Lab
