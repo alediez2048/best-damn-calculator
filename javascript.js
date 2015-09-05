@@ -38,7 +38,9 @@ var buttonCheck = false;
 					}
 				
 
-				if($("#divideButton" || "#multiplyButton" || "#additionBdutton" || "subtractionButton").prop("unchecked")){
+				if($("#divideButton" || "#multiplyButton" || "#additionBdutton" || "subtractionButton").prop("checked", false))
+
+				{
 					alert("null!");
 				};
 });
